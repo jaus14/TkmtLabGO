@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang=“ja”>
+  <head>
+    <meta charset=“UTF-8”>
+    <!-- cssファイルの指定 -->
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <!-- jqueryの読み込み これを入れるとよく使うjsが書きやすくなる -->
+    <script type="text/javascript" src="js/jquery/jquery-3.4.1.min.js"></script>
+    <!-- 自分で書いたjsファイル -->
+    <script type="text/javascript" src="js/login/mozihen.js"></script>
+    <title>ログイン画面</title>
+  </head>
+  <body>
+    <div id="oowaku">
+        <h1>ログイン画面</h1>
+        <table>
+        <tr>
+         <td>ID：</td>
+         <td><input type=text name="namae"></td>
+        </tr>
+        <tr>
+         <td>パスワード：</td>
+         <td><input type=password name="passwd"></td>
+        </tr>
+        </table>    
+        <p id="test"><a href="javascript:;">idセレクタで指定をしています。ココをクリックすると文字が変更されます</a></p>
+    </div>
+  </body>
+</html>
