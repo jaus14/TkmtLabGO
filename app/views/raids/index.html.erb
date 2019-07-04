@@ -1,6 +1,18 @@
 <h1>Raids</h1>
 <ul>
-    <% @raids.each do |raid| %>
-        <li><%= raid.pokemon_name %></li>
-    <% end %>
+    <table border=”1″>
+        <caption>レイド一覧</caption>
+        <tr>
+            <th>名前</th>
+            <th>場所</th>
+            <th>時間</th>
+        </tr>
+        <% @raids.each do |raid| %>
+            <tr>
+                <td><%= raid.pokemon_name %></td>
+                <td><%= raid.location %></td>
+                <td><%= raid.date %></td>
+        </tr>
+        <% end %>
+    </table>
 </ul>
