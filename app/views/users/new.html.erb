@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="jp">
+    <head>
+        <meta charset="utf-8">
+        <title>Create User</title>
+    </head>
+    <body>
+        <%= form_for(@user, url: user_create_path, method: :post) do |f| %>
+        <p>
+            <%= f.label :name_id, "ID" %><br>
+            <%= f.text_field :name_id %>
+        </p>
+        <p>
+            <%= f.label :password, "パスワード" %><br>
+            <%= f.password_field :password %>
+        </p>
+        <p>
+            <%= f.label :comment, "ひとこと" %><br>
+            <%= f.text_field :comment %>
+        </p>
+        <%= f.submit "登録する"%>
+        <% end %>
+    </body>
+</html>
