@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="jp" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <table border=”1″>
+        <caption>ユーザー一覧</caption>
+        <tr>
+            <th>ID</th>
+            <th>password</th>
+            <th>ひとこと</th>　
+        </tr>
+        <% @users.each do |user| %>
+            <tr>
+                <td><%= user.name_id %></td>
+                <td><%= user.password %></td>
+                <td><%= user.comment %></td>
+            </tr>
+        <% end %>
+    </table>
+  </body>
+</html>
