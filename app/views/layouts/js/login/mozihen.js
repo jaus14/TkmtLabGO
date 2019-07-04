@@ -5,5 +5,7 @@ $(function(){
   });
 
 function seni(){
-    location.href = "raid.html"
+    var name = document.form1.namae;
+    var passwd = document.form2.passwd;
+    location.href = "raid.html";
 }
