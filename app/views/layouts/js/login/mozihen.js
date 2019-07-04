@@ -3,3 +3,7 @@ $(function(){
       $(this).text("クリックされました");
     });
   });
+
+function seni(){
+    location.href = "raid.html"
+}
