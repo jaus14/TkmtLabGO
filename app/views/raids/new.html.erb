@@ -1,0 +1,25 @@
+<head>
+    <meta charset="utf-8">
+
+<h1>レイド登録</h1>
+<body>
+    <%= form_for(@raid, url: raid_create_path, method: :post) do |f| %>
+        <p>
+            <%= f.label :pokemon_name, "ポケモン" %><br>
+            <%= f.text_field :pokemon_name %>
+        </p>
+        <p>
+            <%= f.label :location, "場所" %><br>
+            <%= f.text_field :location %>
+        </p>
+        <p>
+            <%= f.label :date, "時間" %><br>
+            <%= f.datetime_local_field :date %>
+        </p>
+        <p>
+            <%= f.label :comment, "一言" %><br>
+            <%= f.text_field :comment %>
+        </p>
+        <%= f.submit "登録する"%>
+    <% end %>
+</body>
