@@ -1,0 +1,18 @@
+<h1>Raids</h1>
+<ul>
+    <table border=”1″>
+        <caption>ポケモン一覧</caption>
+        <tr>
+            <th>図鑑番号</th>
+            <th>名前</th>
+            <th>レベル</th>
+        </tr>
+        <% @pokemons.each do |pokemon| %>
+            <tr>
+                <td><%= pokemon.number %></td>
+                <td><%= pokemon.name %></td>
+                <td><%= pokemon.level %></td>
+        </tr>
+        <% end %>
+    </table>
+</ul>

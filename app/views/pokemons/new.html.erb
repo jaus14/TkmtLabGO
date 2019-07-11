@@ -1,0 +1,21 @@
+<head>
+    <meta charset="utf-8">
+
+<h1>ポケモン登録</h1>
+<body>
+    <%= form_for(@pokemon, url: pokemon_create_path, method: :post) do |f| %>
+        <p>
+            <%= f.label :number, "番号" %><br>
+            <%= f.text_field :number %>
+        </p>
+        <p>
+            <%= f.label :name, "名前" %><br>
+            <%= f.text_field :name %>
+        </p>
+        <p>
+            <%= f.label :level, "レベル" %><br>
+            <%= f.text_field :level %>
+        </p>
+        <%= f.submit "登録する"%>
+    <% end %>
+</body>

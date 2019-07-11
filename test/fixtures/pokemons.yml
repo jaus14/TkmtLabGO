@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number: 1
+  form_id: 1
+  name: 
+  level: 1
+
+two:
+  number: 1
+  form_id: 1
+  name: 
+  level: 1
