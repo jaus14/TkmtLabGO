@@ -12,6 +12,12 @@
 
 ActiveRecord::Schema.define(version: 2019_07_11_083100) do
 
+  create_table "places", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "pokemons", force: :cascade do |t|
     t.integer "number"
     t.integer "form_id", default: 0

@@ -9,4 +9,7 @@ Rails.application.routes.draw do
   get "users" => "users#index"
   get "user/new" => "users#new"
   post "user/create" => "users#create"
+  get "places" => "places#index"
+  get "place/new" => "places#new"
+  post "place/create" => "places#create"
 end

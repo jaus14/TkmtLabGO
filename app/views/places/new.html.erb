@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="jp">
+    <head>
+        <meta charset="utf-8">
+        <title>Create Place</title>
+    </head>
+    <body>
+        <%= form_for(@place, url: place_create_path, method: :post) do |f| %>
+        <p>
+            <%= f.label :name, "Name" %><br>
+            <%= f.text_field :name %>
+        </p>
+        <%= f.submit "登録する"%>
+        <% end %>
+    </body>
+</html>

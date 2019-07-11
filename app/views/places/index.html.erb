@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="jp" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>場所一覧</title>
+  </head>
+  <body>
+    <table border=”1″>
+        <caption>場所一覧</caption>
+        <tr>
+            <th>Name</th>
+        </tr>
+        <% @places.each do |place| %>
+            <tr>
+                <td><%= place.name %></td>
+            </tr>
+        <% end %>
+    </table>
+  </body>
+</html>
