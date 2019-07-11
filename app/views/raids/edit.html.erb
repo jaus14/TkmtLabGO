@@ -1,0 +1,19 @@
+<head>
+    <meta charset="utf-8">
+</head>
+<h1>レイド編集</h1>
+<body>
+    <%= form_tag("update") do %>
+        <p>
+          ポケモン<br>
+          <input type="number" name="pokemon_id"><%= @raid.pokemon_id %></input><br>
+          場所<br>
+          <input type="number" name="place_id"><%= @raid.place_id %></input><br>
+          時間<br>
+          <input type="datetime-local" name="date"><%= @raid.date %></input><br>
+          一言<br>
+          <textarea name="comment"><%= @raid.comment %></textarea><br>
+          <input type="submit" value="保存する">
+        </p>
+    <% end %>
+</body>

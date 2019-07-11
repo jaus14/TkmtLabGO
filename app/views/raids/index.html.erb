@@ -6,12 +6,14 @@
             <th>名前</th>
             <th>場所</th>
             <th>時間</th>
+            <th>編集</th>
         </tr>
         <% @raids.each do |raid| %>
             <tr>
-                <td><%= raid.pokemon_name %></td>
-                <td><%= raid.location %></td>
+                <td><%= raid.pokemon_id %></td>
+                <td><%= raid.place_id %></td>
                 <td><%= raid.date %></td>
+                <td><%= link_to("編集", "raids/#{raid.id}/edit") %></td>
         </tr>
         <% end %>
     </table>
