@@ -11,7 +11,6 @@ function mover(){
 function seni(){
     var name = document.form1.namae;
     var passwd = document.form2.passwd;
-    alert(name);
     /*
     if(name == nameCheck() && passwd == passwdCheck()){
 
