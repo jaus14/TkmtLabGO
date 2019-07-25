@@ -9,15 +9,15 @@ function mover(){
 }
 
 function seni(){
-  alert("まだ")
     var name = document.form1.namae;
     var passwd = document.form2.passwd;
-
+    alert(name);
+    /*
     if(name == nameCheck() && passwd == passwdCheck()){
 
     }else{
 
-    }
-    
-    location.href = "raid.html";
+    }*/
+
+    window.location.href = "raid.html";
 }

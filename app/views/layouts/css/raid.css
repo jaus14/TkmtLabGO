@@ -17,7 +17,7 @@ body:after {/*擬似要素をつくる*/
   z-index: -1;
   background: -moz-linear-gradient(top, rgb(0, 101, 252), #FFF);
   background: -webkit-linear-gradient(top, rgb(0, 101, 252), #FFF);
-  background: linear-gradient(to bottom, rgb(0, 101, 252), #FFF);
+  background: radial-gradient(rgb(169, 214, 255), rgb(0, 80, 159));;
 }
 
 #oowaku {
@@ -30,7 +30,7 @@ body:after {/*擬似要素をつくる*/
 }
 
 .bg-image {
-  background-image: url("../picture/pokego.jpg");
+  background-image: url("../picture/raidmezirusi.png");
   width: 400px;
   height: 400px;
   text-align: center;
@@ -39,7 +39,7 @@ body:after {/*擬似要素をつくる*/
   margin: 30px auto;
 }
 .bg-mask {
-  height: 93%;
+  height: 90%;
   background: rgba(255,255,255,0.5);
 }
 
