@@ -4,7 +4,12 @@ $(function(){
     });
   });
 
+function mover(){
+    document.value = "POKEMON GO"
+}
+
 function seni(){
+  alert("まだ")
     var name = document.form1.namae;
     var passwd = document.form2.passwd;
 
