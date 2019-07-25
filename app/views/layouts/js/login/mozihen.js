@@ -18,8 +18,6 @@ function seni(){
     }else{
 
     }
-
-
-
+    
     location.href = "raid.html";
 }

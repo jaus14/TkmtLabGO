@@ -2,12 +2,18 @@
 <html lang=“ja”>
   <head>
     <meta charset=“UTF-8”>
+    <!-- cssファイルの指定 -->
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <!-- jqueryの読み込み これを入れるとよく使うjsが書きやすくなる -->
+    <script type="text/javascript" src="js/jquery/jquery-3.4.1.min.js"></script>
+    <!-- 自分で書いたjsファイル -->
+    <script type="text/javascript" src="js/login/mozihen.js"></script>
     <title>レイド画面</title>
   </head>
   <body>
     <div id="oowaku">
         <h1>レイド画面</h1>
-        <table>
+        <table align="center">
         <tr>
          <td>ポケモン：</td>
          <td><input type=text name="pokemon"></td>
@@ -28,30 +34,6 @@
         <input type="button" onclick="location.href='login.html'" value="遷移">
         <p id="test"><a href="javascript:;">idセレクタで指定をしています。ココをクリックすると文字が変更されます</a></p>
     </div>
-
-    <section class="early">
-
-      <article>
-         <p class="example-right">Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text Your scrolling text goes here Your scrolling text goes here </p>
-      </article>
-      <article>
-          <p class="example-left">Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your</p>
-        
-         <p class="example-right">Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text Your scrolling text goes here Your scrolling text goes here </p>
-        
-        </article>
-      
-      
-      <article>
-      <marquee behavior="scroll" direction="left">Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here</marquee>
-      
-      <marquee behavior="scroll" direction="right">Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here </marquee>
-      </article>
-      
-        <article>
-          <p class="example-left">Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your scrolling text goes here Your</p> 
-        </article>
-        </section>
         
   </body>
 </html>
