@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   get "raids" => "raids#index"
   get "raid/new" => "raids#new"
   post "raid/create" => "raids#create"
+  get "raids/:id/edit" => "raids#edit"
+  post "raids/:id/update" => "raids#update"
   get "pokemons" => "pokemons#index"
   get "pokemon/new" => "pokemons#new"
   post "pokemon/create" => "pokemons#create"

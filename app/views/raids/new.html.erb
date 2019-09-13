@@ -5,12 +5,12 @@
 <body>
     <%= form_for(@raid, url: raid_create_path, method: :post) do |f| %>
         <p>
-            <%= f.label :pokemon_name, "ポケモン" %><br>
-            <%= f.text_field :pokemon_name %>
+            <%= f.label :pokemon_id, "ポケモン" %><br>
+            <%= f.number_field :pokemon_id %>
         </p>
         <p>
-            <%= f.label :location, "場所" %><br>
-            <%= f.text_field :location %>
+            <%= f.label :place_id, "場所" %><br>
+            <%= f.number_field :place_id %>
         </p>
         <p>
             <%= f.label :date, "時間" %><br>
@@ -20,6 +20,6 @@
             <%= f.label :comment, "一言" %><br>
             <%= f.text_field :comment %>
         </p>
-        <%= f.submit "登録する"%>
+        <%= f.submit "登録する" %>
     <% end %>
 </body>
