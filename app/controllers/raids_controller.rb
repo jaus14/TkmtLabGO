@@ -21,6 +21,8 @@ class RaidsController < ApplicationController
 
     def edit
         @raid = Raid.find(params[:id])
+        @pokemons = Pokemon.all
+        @places = Place.all
     end
 
     def update

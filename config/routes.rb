@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get "raids" => "raids#index"
   get "raid/new" => "raids#new"
-  post "raids/create" => "raids#create"
+  post "raid/create" => "raids#create"
   get "raids/:id/edit" => "raids#edit"
   post "raids/:id/update" => "raids#update"
   get "pokemons" => "pokemons#index"

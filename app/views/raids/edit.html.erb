@@ -6,9 +6,9 @@
     <%= form_tag("update") do %>
         <p>
           ポケモン<br>
-          <input type="number" name="pokemon_id"><%= @raid.pokemon_id %></input><br>
+          <%= collection_select(:pokemon_name, :name, @pokemons, :id, :name) %><br>
           場所<br>
-          <input type="number" name="place_id"><%= @raid.place_id %></input><br>
+          <%= collection_select(:place_id, :name, @places, :id, :name) %><br>
           時間<br>
           <input type="datetime-local" name="date"><%= @raid.date %></input><br>
           一言<br>
