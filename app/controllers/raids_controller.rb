@@ -4,6 +4,7 @@ class RaidsController < ApplicationController
 
     def index
         @raids = Raid.all
+        @pokemons = Pokemon.all
     end
 
     def new
