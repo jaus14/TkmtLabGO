@@ -59,7 +59,19 @@ body:after {/*擬似要素をつくる*/
 }
 
 .textran:focus {
-  border: 2px solid #dd4444
+  border: 2px solid #dd4444;
+}
+
+.textarearan{   
+    padding: .3em .10em;
+    height: 50px;
+    background: #fff;
+    border: 3px double #1192d3;
+    resize:none;
+}
+
+.textarearan:focus{
+    border: 2px solid #dd4444;
 }
 
 table {
@@ -86,4 +98,35 @@ table {
   }
   .btn-square-shadow:hover {
     background: #000000;
+  }
+
+  .textran {
+    padding: .3em .10em;
+    height: 20px;
+    background: #fff;
+    border: 3px double #14dd9a;
+  }
+
+  h1 {
+    position: relative;
+    padding: 1em 0;
+  }
+  h1::before,
+  h1::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 6px;
+    box-sizing: border-box;
+  }
+  h1::before {
+    top: 0;
+    border-top: 2px solid #000000;
+    border-bottom: 1px solid #ccc;
+  }
+  h1::after {
+    bottom: 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 2px solid #000000;
   }
