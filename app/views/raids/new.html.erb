@@ -3,23 +3,19 @@
 
 <h1>レイド登録</h1>
 <body>
-    <%= form_for(@raid, url: raid_create_path, method: :post) do |f| %>
+    <%= form_tag("create") do %>
         <p>
-            <%= f.label :pokemon_id, "ポケモン" %><br>
-            <%= f.number_field :pokemon_id %>
+          ポケモン<br>
+          <%= collection_select(@pokemon, :pokemon_id, @pokemons, :id, :name) %><br>
+          場所<br>
+          <%= collection_select(@place, :place_id, @places, :id, :name) %><br>
+          時間<br>
+          <input type="datetime-local" name="date"><%= @raid.date %></input><br>
+          一言<br>
+          <textarea name="comment"><%= @raid.comment %></textarea><br>
+          <input type="submit" value="保存する">
         </p>
-        <p>
-            <%= f.label :place_id, "場所" %><br>
-            <%= f.number_field :place_id %>
-        </p>
-        <p>
-            <%= f.label :date, "時間" %><br>
-            <%= f.datetime_local_field :date %>
-        </p>
-        <p>
-            <%= f.label :comment, "一言" %><br>
-            <%= f.text_field :comment %>
-        </p>
-        <%= f.submit "登録する" %>
     <% end %>
+
+
 </body>
