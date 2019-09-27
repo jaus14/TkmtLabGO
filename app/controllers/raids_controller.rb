@@ -10,10 +10,17 @@ class RaidsController < ApplicationController
 
     def new
         @raid = Raid.new
+        @pokemons = Pokemon.all
+        @places = Place.all
     end
 
     def create
-        @raid = Raid.new(raid_params)
+        @raid = Raid.new(
+            pokemon_id: params[:pokemon_id],
+            place_id: params[:place_id],
+            date: params[:date],
+            comment: params[:comment]
+        )
         if @raid.save
             redirect_to raids_path
         else
