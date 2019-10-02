@@ -1,16 +1,19 @@
 class SessionsController < ApplicationController
 
-  def new
+  def login_form
   end
 
-  def create
+  def login
     user = User.find_by(name_id: params[:session][:name_id].downcase)
-    if user && user.password == params[:session][:password]
+    if user && user.authenticate(params[:session][:password])
         log_in user
         redirect_to users_path
+    elsif !user
+        flash.now[:alert] = 'ユーザーおらんよ'
+        render 'login_form'
     else
-        flash.now[:danger] = 'Invalid name/password combination'
-        render 'new'
+        flash.now[:alert] = 'パスワードちがうよ'
+        render 'login_form'
     end
   end
 
