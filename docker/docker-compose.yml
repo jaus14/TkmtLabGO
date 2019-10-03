@@ -3,6 +3,6 @@ services:
   rails:
     build: 
       context: ..
-      dockerfile: rails.Dockerfile
+      dockerfile: docker/rails.Dockerfile
     ports:
       - "3000:3000"
