@@ -6,12 +6,16 @@
             <th>名前</th>
             <th>場所</th>
             <th>時間</th>
+            <th>編集</th>
         </tr>
         <% @raids.each do |raid| %>
             <tr>
-                <td><%= raid.pokemon_name %></td>
-                <td><%= raid.location %></td>
+                <% pokemon_id = raid.pokemon_id %>
+                <% place_id = raid.place_id %>
+                <td><%= @pokemons[pokemon_id - 1]['name'] %></td>
+                <td><%= @places[place_id - 1]['name'] %></td>
                 <td><%= raid.date %></td>
+                <td><%= link_to("編集", "raids/#{raid.id}/edit") %></td>
         </tr>
         <% end %>
     </table>

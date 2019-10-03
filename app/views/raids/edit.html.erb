@@ -1,9 +1,9 @@
 <head>
     <meta charset="utf-8">
-
-<h1>レイド登録</h1>
+</head>
+<h1>レイド編集</h1>
 <body>
-    <%= form_tag("create") do %>
+    <%= form_tag("update") do %>
         <p>
           ポケモン<br>
           <%= collection_select(@pokemon, :pokemon_id, @pokemons, :id, :name) %><br>
@@ -16,6 +16,4 @@
           <input type="submit" value="保存する">
         </p>
     <% end %>
-
-
 </body>

@@ -6,12 +6,13 @@
     </head>
     <body>
         <%= form_for(@user, url: user_create_path, method: :post) do |f| %>
+        <%= render 'layouts/error_messages', model: f.object %>
         <p>
-            <%= f.label :name_id, "ID" %><br>
+            <%= f.label :name_id, "ID(4文字以上)" %><br>
             <%= f.text_field :name_id %>
         </p>
         <p>
-            <%= f.label :password, "パスワード" %><br>
+            <%= f.label :password, "パスワード(8文字以上16文字以下)" %><br>
             <%= f.password_field :password %>
         </p>
         <p>
