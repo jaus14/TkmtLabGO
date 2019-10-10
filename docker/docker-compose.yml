@@ -6,3 +6,5 @@ services:
       dockerfile: docker/rails.Dockerfile
     ports:
       - "3000:3000"
+    volumes:
+      - ../db:/var/www/db
