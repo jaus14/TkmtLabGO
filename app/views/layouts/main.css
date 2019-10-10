@@ -1,6 +1,6 @@
 .menu{
   border:outset;
-  width:1800px;
+  width:100%;
   float:left;
   
 }
@@ -32,7 +32,7 @@ li#menu0,#menu1,#menu2,#menu3{
   writing-mode: vertical-rl;
   border:outset;
   height:850px;
-  width:200px;
+  width:11%;
   font-size:50px;
     background: -webkit-linear-gradient(left, #7E898F 0%, #636C75 100%), -webkit-radial-gradient(at top, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.55) 100%), -webkit-radial-gradient(at top, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.08) 63%);
   background: linear-gradient(90deg, #7E898F 0%, #636C75 100%), radial-gradient(at top, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.55) 100%), radial-gradient(at top, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.08) 63%);
@@ -42,7 +42,7 @@ li#menu0,#menu1,#menu2,#menu3{
 }
 .center{
   float:left;
-  width:850px;
+  width:48%;
   height:850px;
   background:#00ffff;
   border:inset;
@@ -54,7 +54,7 @@ li#menu0,#menu1,#menu2,#menu3{
 .right{
   float:left;
   font-family:'Yu Mincho';
-  width:720px;
+  width:40%;
   height:850px;
   
   border:outset;
