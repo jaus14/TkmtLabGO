@@ -12,7 +12,6 @@ RUN git clone https://github.com/jaus11/TkmtLabGO.git /var/www
 WORKDIR /var/www
 
 RUN bundle install
-RUN bundle exec rake db:create && bundle exec rake db:migrate
 
 EXPOSE 3000
-CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0"]
+CMD bundle exec rake db:create && bundle exec rake db:migrate && bundle exec rails server -b 0.0.0.0
