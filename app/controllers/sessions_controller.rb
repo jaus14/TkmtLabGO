@@ -7,6 +7,7 @@ class SessionsController < ApplicationController
     user = User.find_by(name_id: params[:session][:name_id].downcase)
     if user && user.authenticate(params[:session][:password])
         log_in user
+        session[:user_id] = user.id
         redirect_to users_path
     elsif !user
         flash.now[:alert] = 'ユーザーおらんよ'
