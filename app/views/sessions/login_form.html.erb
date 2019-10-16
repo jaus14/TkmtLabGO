@@ -1,18 +1,68 @@
 <% provide(:title, "Log in") %>
-<h1>Log in</h1>
+<!DOCTYPE html>
+<html lang=“ja”>
+  <head>
+    <meta charset=“UTF-8”>
+    <!-- cssファイルの指定 -->
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <!-- jqueryの読み込み これを入れるとよく使うjsが書きやすくなる -->
+    <script type="text/javascript" src="js/jquery/jquery-3.4.1.min.js"></script>
+    <!-- 自分で書いたjsファイル -->
+    <script type="text/javascript" src="mozihen.js"></script>
+    <title>ログイン画面</title>
+  </head>
+  <body>
+    <!--<div id="oowaku">-->
+    <div class="bg-image"><div class="bg-mask">
 
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
-      <%= flash[:alert] %>
-      <%= form_for(:session, url: login_path) do |f| %>
-          <%= f.label :name_id %>
-          <%= f.text_field :name_id%><br>
+        <section class="early">
+            <article>
+              <p class="example-left">今日も一日ポケモンGO!友達をレイドに誘って強いポケモンをゲットするんじゃぞ～</p>
+            </article>
+          </section>
 
-          <%= f.label :password %>
-          <%= f.password_field :password%><br>
+        <h1>
+            <img src="/gif_pika.gif" width=20% height=20% style="float:left;">
+            ログイン画面
+            <img src="/gif_pika.gif" width=20% height=20% style="float:right;">
+          </h1>
+        <!-- <table align="center">
+        <tr>
+         <td><div class="">ID：</div></td>
+         <td><form name="form1" ><input class=textran type=text name="namae" placeholder="(必須)" id="name"></form></td>
+        </tr>
+        <tr>
+         <td>パスワード：</td>
+         <td><form name="form2"><input class=textran type=password name="passwd" placeholder="(必須)" id="passwd"></form></td>
+        </tr>
+        </table>
+        <input type="button" onClick="seni()" value="POKEMON GO!!" class="btn-square-shadow" onmouseover=mover()> -->
+        <%= flash[:alert] %>
+        <%= form_for(:session, url: login_path) do |f| %>
+            <table align="center">
+                <tr><td>ID：</td><td><%= f.text_field :name_id, :class => "textran", :placeholder => "(必須)"%></td></tr>
+                <tr><td>パスワード：</td><td><%= f.password_field :password, :class => "textran", :placeholder  => "(必須)"%></td></tr>
+            </table>
+            <%= f.submit "POKEMON GO!!", :class => "btn-square-shadow"%>
+        <% end %>
 
-          <%= f.submit "Log in"%>
-      <% end %>
 
-  </div>
-</div>
+        <p>  </p>
+
+        <section class="early">
+          <article>
+            <p class="example-left">今日も一日ポケモンGO!友達をレイドに誘って強いポケモンをゲットするんじゃぞ～</p>
+          </article>
+        </section>
+
+        <!-- <img src="./picture/gosanke.png" width="38%" height="16%"> -->
+
+
+
+    <!--</div>-->
+    </div></div>
+
+
+
+  </body>
+</html>
