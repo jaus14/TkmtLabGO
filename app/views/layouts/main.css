@@ -1,8 +1,19 @@
+
 .menu{
   border:outset;
   width:100%;
   float:left;
+
+ 
+  top: 0; left:0;
   
+  content: "";
+  background:#9999ff;
+  background: -moz-linear-gradient(top, #9999ff 0%,#66ffff 100%);
+  background: -webkit-linear-gradient(top,#9999ff 0%,#66ffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbcacb', endColorstr='#f79697',GradientType=0 );
+  background: linear-gradient(to bottom, #9999ff 0%, #66ffff 100%);
+																		     
 }
 
 ul#mainmenu{
@@ -26,7 +37,7 @@ li#menu0,#menu1,#menu2,#menu3{
 .left{
  
   float:left;
-  font-family: source-han-serif-japanese, serif;
+  font-family: Meiryo, "Hiragino Kaku Gothic Pro W3", Courier New, sans-serif;
   
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
@@ -34,8 +45,11 @@ li#menu0,#menu1,#menu2,#menu3{
   height:850px;
   width:11%;
   font-size:50px;
-    background: -webkit-linear-gradient(left, #7E898F 0%, #636C75 100%), -webkit-radial-gradient(at top, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.55) 100%), -webkit-radial-gradient(at top, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.08) 63%);
-  background: linear-gradient(90deg, #7E898F 0%, #636C75 100%), radial-gradient(at top, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.55) 100%), radial-gradient(at top, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.08) 63%);
+
+
+ 
+
+
 }
 .raid{
   text-align:center;
@@ -44,7 +58,7 @@ li#menu0,#menu1,#menu2,#menu3{
   float:left;
   width:48%;
   height:850px;
-  background:#00ffff;
+
   border:inset;
   text-align:center
 }
