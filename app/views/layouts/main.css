@@ -30,33 +30,13 @@ li#menu0,#menu1,#menu2,#menu3{
   height:70px;
   font-size:30px;
    border-bottom: solid;
-  
-}
-
-
-.left{
- 
-  float:left;
-  font-family: Meiryo, "Hiragino Kaku Gothic Pro W3", Courier New, sans-serif;
-  
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
-  border:outset;
-  height:850px;
-  width:11%;
-  font-size:50px;
-
-
- 
-
-
-}
+ }
 .raid{
   text-align:center;
 }
 .center{
   float:left;
-  width:48%;
+  width:65%;
   height:850px;
 
   border:inset;
@@ -68,7 +48,7 @@ li#menu0,#menu1,#menu2,#menu3{
 .right{
   float:left;
   font-family:'Yu Mincho';
-  width:40%;
+  width:34%;
   height:850px;
   
   border:outset;
