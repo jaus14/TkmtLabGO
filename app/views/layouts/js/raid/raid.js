@@ -1,15 +1,20 @@
 
 
 function seni(){
-    /*
-    var name = document.form1.namae;
-    var passwd = document.form2.passwd;
-    
-    if(name == nameCheck() && passwd == passwdCheck()){
 
+    var pokemon = document.getElementById('pokemon').value;;
+    var time = document.getElementById('time').value;;
+    var locate = document.getElementById('locate').value;;
+    var bikou = document.getElementById('bikou').value;;
+
+    if(check(pokemon,time,locate,bikou)){
+        window.location.href = "main.html";
     }else{
+        alert("入力情報が違います。");
+    }
+}
 
-    }*/
-
-    window.location.href = "login.html";
+function check(pokemon,time,locate,bikou){
+    //入力情報が空白ではないか確認する処理
+    return true;
 }

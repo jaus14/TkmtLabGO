@@ -59,6 +59,13 @@ body:after {/*擬似要素をつくる*/
   background: rgb(100, 100, 255);
 }
 
+.textran {
+  padding: .3em .10em;
+  height: 20px;
+  background: #fff;
+  border: 3px double #14dd9a;
+}
+
 .textran:focus {
   border: 2px solid #dd4444
 }
@@ -98,6 +105,7 @@ table {
   }
   
   .example-left {
+    background: #c2edff;/*背景色*/
     white-space: nowrap;
     position: absolute;
     text-transform: uppercase;
@@ -173,4 +181,28 @@ table {
   
       animation-duration:1s;
       animation-delay: 1.5s
+  }
+
+  h1 {
+    position: relative;
+    padding: 1em 0;
+  }
+  h1::before,
+  h1::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 6px;
+    box-sizing: border-box;
+  }
+  h1::before {
+    top: 0;
+    border-top: 2px solid #000000;
+    border-bottom: 1px solid #ccc;
+  }
+  h1::after {
+    bottom: 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 2px solid #000000;
   }
