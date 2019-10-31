@@ -8,6 +8,7 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
         log_in user
         session[:user_id] = user.id
+        user.update_attribute(:is_login, 1)
         redirect_to users_path
     elsif !user
         flash.now[:alert] = 'ユーザーおらんよ'
