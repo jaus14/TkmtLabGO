@@ -8,7 +8,8 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
         log_in user
         session[:user_id] = user.id
-        redirect_to users_path
+        user.update_attribute(:is_login, 1)
+        redirect_to raids_path
     elsif !user
         flash.now[:alert] = 'ユーザーおらんよ'
         render 'login_form'
@@ -18,6 +19,10 @@ class SessionsController < ApplicationController
     end
   end
 
-  def destroy
+  def logout
+      user = User.find(session[:user_id])
+      user.update_attribute(:is_login, 0)
+      session.delete(:user_id)
+      redirect_to login_path
   end
 end

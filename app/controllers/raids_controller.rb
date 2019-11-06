@@ -6,6 +6,7 @@ class RaidsController < ApplicationController
         @raids = Raid.all
         @pokemons = Pokemon.all
         @places = Place.all
+        @users = User.all
     end
 
     def new
@@ -52,7 +53,5 @@ class RaidsController < ApplicationController
         def raid_params
             params.require(:raid).permit(:pokemon_id, :place_id, :date, :comment)
         end
-
-
 
 end
