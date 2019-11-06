@@ -1,10 +1,10 @@
 
-FROM ruby:2.5.1
+FROM ruby:2.5.5
 
-ENV BUNDLER_VERSION 2.0.1
+ENV BUNDLER_VERSION 2.0.2
 
 RUN apt-get -y update && apt-get -y install nodejs && rm -rf /var/lib/apt/lists/*
-RUN gem install bundler -v 2.0.1
+RUN gem install bundler -v $BUNDLER_VERSION
 
 COPY . /var/www
 
