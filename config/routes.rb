@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   post "user/create" => "users#create"
   get "login" => "sessions#login_form"
   post "login" => "sessions#login"
-  delete "logout" => "sessions#destroy"
+  post "logout" => "sessions#logout"
   get "places" => "places#index"
   get "place/new" => "places#new"
   post "place/create" => "places#create"

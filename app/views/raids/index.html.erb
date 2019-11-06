@@ -9,14 +9,40 @@
             <th>編集</th>
         </tr>
         <% @raids.each do |raid| %>
-            <tr>
-                <% pokemon_id = raid.pokemon_id %>
-                <% place_id = raid.place_id %>
-                <td><%= @pokemons[pokemon_id - 1]['name'] %></td>
-                <td><%= @places[place_id - 1]['name'] %></td>
-                <td><%= raid.date %></td>
-                <td><%= link_to("編集", "raids/#{raid.id}/edit") %></td>
+        <tr>
+            <% pokemon_id = raid.pokemon_id %>
+            <% place_id = raid.place_id %>
+            <td><%= @pokemons[pokemon_id - 1]['name'] %></td>
+            <td><%= @places[place_id - 1]['name'] %></td>
+            <td><%= raid.date %></td>
+            <td><%= link_to("編集", "raids/#{raid.id}/edit") %></td>
         </tr>
+        <% end %>
+    </table>
+
+    <table border=”1″>
+        <caption>ユーザー一覧</caption>
+        <tr>
+            <th>ID</th>
+            <th>password</th>
+            <th>ひとこと</th>
+            <th>ログイン状況</th>
+        </tr>
+        <% @users.each do |user| %>
+            <tr>
+                <td><%= user.name_id %></td>
+                <td><%= user.password_digest %></td>
+                <td><%= user.comment %></td>
+                <%= form_for(:session, url: logout_path) do |f| %>
+                    <td>
+                        <% if user.is_login == 0 %>
+                            <%= f.submit "ログイン" %>
+                        <% else %>
+                            <%= f.submit "ログアウト" %>
+                        <% end %>
+                    </td>
+                <% end %>
+            </tr>
         <% end %>
     </table>
 </ul>
