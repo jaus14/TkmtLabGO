@@ -1,3 +1,84 @@
+<<<<<<< HEAD
+.menu{
+  border:outset;
+  width:1800px;
+  float:left;
+  
+}
+
+ul#mainmenu{
+  font-weight:bold;
+  text-align:center;
+  
+  float:left;
+}
+li#menu0,#menu1,#menu2,#menu3{
+  text-align:center;
+  float:left;
+  list-style-type:none;
+  width:300px;
+  height:70px;
+  font-size:30px;
+   border-bottom: solid;
+  
+}
+
+
+.left{
+ 
+  float:left;
+  font-family: source-han-serif-japanese, serif;
+  
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  border:outset;
+  height:850px;
+  width:200px;
+  font-size:50px;
+    background: -webkit-linear-gradient(left, #7E898F 0%, #636C75 100%), -webkit-radial-gradient(at top, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.55) 100%), -webkit-radial-gradient(at top, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.08) 63%);
+  background: linear-gradient(90deg, #7E898F 0%, #636C75 100%), radial-gradient(at top, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.55) 100%), radial-gradient(at top, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.08) 63%);
+}
+.raid{
+  text-align:center;
+}
+.center{
+  float:left;
+  width:850px;
+  height:850px;
+  background:#00ffff;
+  border:inset;
+  text-align:center
+}
+
+
+
+.right{
+  float:left;
+  font-family:'Yu Mincho';
+  width:720px;
+  height:850px;
+  
+  border:outset;
+  background-image: -webkit-linear-gradient(#DEDFE3 2%, #AEB3B9 95%), -webkit-radial-gradient(33% 100%, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: linear-gradient(#DEDFE3 2%, #AEB3B9 95%), radial-gradient(33% 100%, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-blend-mode: screen;
+}
+ul#minakami,#SS{
+  list-style-type:none;
+}
+
+
+[class^="icon"] {
+  width:50px;
+  height:50px;
+  border:groove;
+  vertical-align:middle;
+}
+li#on,#off{
+  display: inline-block;
+  font-size:30px;
+}
+=======
 
 .menu{
   border:outset;
@@ -150,3 +231,4 @@ td{
   display: inline-block;
   font-size:25px;
 }
+>>>>>>> 8e42484ac0151e94fe72dbfaee843efcda47dae3
