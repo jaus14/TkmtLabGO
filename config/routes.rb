@@ -8,7 +8,6 @@ Rails.application.routes.draw do
   get "pokemons" => "pokemons#index"
   get "pokemon/new" => "pokemons#new"
   post "pokemon/create" => "pokemons#create"
-  get "users" => "users#index"
   get "user/new" => "users#new"
   post "user/create" => "users#create"
   get "login" => "sessions#login_form"
