@@ -102,10 +102,6 @@ td{
   background-blend-mode: screen;
 }
 
-.right h3{
-  text-align: center;
-}
-
 .btn-square-pop {
   position: relative;
   display: inline-block;
@@ -135,17 +131,32 @@ td{
 }
 .rightdiv{
   margin: 10px;
-  padding: 20px;
+  padding: 10px;
   font-size: 25px;
   font-weight: bold;
   background: #FFF;
   border: solid 3px #000000;/*線*/
   border-radius: 10px;/*角の丸み*/
 }
+
+.rightdiv h3{
+  text-align: center;
+  margin: 0px 0px -20px 0px;
+}
+
 .right ul{
   list-style-type:none;
 }
 .right ul li{
   display: inline-block;
   font-size:25px;
+  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'
+}
+
+#onlinediv{
+  background: #fffde8;
+}
+
+#offlinediv{
+  background: #f1f8ff;
 }
