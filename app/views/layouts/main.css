@@ -12,7 +12,7 @@
   background: -webkit-linear-gradient(top,#9999ff 0%,#66ffff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbcacb', endColorstr='#f79697',GradientType=0 );
   background: linear-gradient(to bottom, #9999ff 0%, #66ffff 100%);
-																		     
+  min-width: 1250px ; 
 }
 
 ul#mainmenu{
@@ -32,6 +32,10 @@ li#menu0,#menu1,#menu2,#menu3{
  }
 .raid{
   text-align:center;
+}
+.under{
+  min-width:1250px;
+  width:expression(document.body.clientWidth < 1502? "1500px" : "auto"); 
 }
 .center{
   float:left;
