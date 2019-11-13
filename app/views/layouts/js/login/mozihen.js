@@ -24,5 +24,6 @@ function seni(){
 
 function check(name,passwd){
   //名前とパスワードが一致しているかどうか確認する処理
+  
   return true;
 }
