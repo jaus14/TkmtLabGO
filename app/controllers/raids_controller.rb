@@ -7,6 +7,7 @@ class RaidsController < ApplicationController
         @pokemons = Pokemon.all
         @places = Place.all
         @users = User.all
+        @login_user = User.find(session[:user_id])
     end
 
     def new

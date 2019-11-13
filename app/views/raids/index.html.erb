@@ -58,10 +58,13 @@
 
       <div class="rightdiv">
         <!-- ログインしている人 -->
-        <img class="icon" src="assets/pikatyu.png">lightning オンライン
+        <img class="icon" src="assets/pikatyu.png"><%= @login_user.name_id %> オンライン
         <br><br>
-        <a href="#" class="btn-square-pop">オフライン</a>
-        <a href="#" class="btn-square-pop">オンライン</a>
+        <!-- <a href="/logout" class="btn-square-pop">オフライン</a> -->
+        <!-- <a href="#" class="btn-square-pop">オンライン</a> -->
+        <%= form_for(:session, url: logout_path) do |f| %>
+            <%= f.submit "ログアウト", :class=>"btn-square-pop" %>
+        <% end %>
       </div>
 
       <div class="rightdiv">
@@ -90,8 +93,8 @@
 
 <ul>
 
-    <!-- <table border=”1″>
-        <caption>ユーザー一覧</caption>
+    <table border=”1″>
+        <caption>ユーザー一覧(後で消します)</caption>
         <tr>
             <th>ID</th>
             <th>password</th>
@@ -114,5 +117,5 @@
                 <% end %>
             </tr>
         <% end %>
-    </table> -->
+    </table>
 </ul>
