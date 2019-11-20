@@ -49,7 +49,8 @@
 		     <td><%= @pokemons[pokemon_id - 1]['name'] %></td>
 		     <td><%= @places[place_id - 1]['name'] %></td>
 		     <td><%= raid.date %></td>
-             <td><%= link_to("編集", "raids/#{raid.id}/edit") %></td>
+             <!-- <td><%= link_to("編集", "raids/#{raid.id}/edit") %></td> -->
+             <td><%= link_to "削除", "raids/#{raid.id}/destroy", method: :delete %></td>
 		    </tr>
             <% end %>
 		  </tbody>
