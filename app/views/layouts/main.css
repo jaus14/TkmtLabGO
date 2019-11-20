@@ -36,11 +36,13 @@ li#menu0,#menu1,#menu2,#menu3{
 .under{
   min-width:1250px;
   width:expression(document.body.clientWidth < 1502? "1500px" : "auto"); 
+  min-height:850px;  
+  display:flexbox;
 }
 .center{
   float:left;
-  width:65%;
-  height:850px;
+  width:59%;
+  min-height:850px; 
 
   border:inset;
   text-align:center;
@@ -97,8 +99,8 @@ td{
 .right{
   float:right;
   font-family:'Yu Mincho';
-  width:34%;
-  height:850px;
+  width:40%;
+  height:850px; 
   
   border:outset;
   background-image: -webkit-linear-gradient(#DEDFE3 2%, #AEB3B9 95%), -webkit-radial-gradient(33% 100%, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
