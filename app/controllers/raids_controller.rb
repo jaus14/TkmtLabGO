@@ -50,6 +50,13 @@ class RaidsController < ApplicationController
         end
     end
 
+    def show
+      @raid = Raid.find(params[:id])
+      @pokemon = Pokemon.find(@raid[:pokemon_id])
+      @place = Place.find(@raid[:place_id])
+      # @attendance = @Attendance.find()
+    end
+
     private
         def raid_params
             params.require(:raid).permit(:pokemon_id, :place_id, :date, :comment)
