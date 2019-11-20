@@ -1,6 +1,7 @@
 class RaidsController < ApplicationController
 
     protect_from_forgery :except => ["update"]
+    protect_from_forgery :except => ["attendance"]
 
     def index
         @raids = Raid.all
@@ -54,7 +55,23 @@ class RaidsController < ApplicationController
       @raid = Raid.find(params[:id])
       @pokemon = Pokemon.find(@raid[:pokemon_id])
       @place = Place.find(@raid[:place_id])
-      # @attendance = @Attendance.find()
+      @users = User.all
+      @login_user = User.find(session[:user_id])
+      @attendances = Attendance.where(raid_id: params[:id])
+    end
+
+    def attendance
+      @status_id = params[:attend] ? 2 : params[:thinking] ? 4 : 3
+      @attendance = Attendance.find_or_create_by(
+        raid_id: params[:id],
+        user_id: session[:user_id]
+      )
+      @attendance.update_attributes(
+        status_id: @status_id
+      )
+      if @attendance.save
+          redirect_to '/raid/'+params[:id]+'/show'
+      end
     end
 
     private
