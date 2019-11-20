@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>TkmtLabGO</string>
+    <key>EnvironmentVariables</key>
+    <dict>
+    	<key>PATH</key>
+    	<string>/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin</string>
+    </dict>
+
+    <key>ProgramArguments</key> <!-- 実行プログラムとオプションや引数をノード指定 -->
+    <array>
+        <string>/bin/bash</string>
+    	<string>/Users/rails/Work/TkmtLabGo/server/TkmtLabGO.sh</string> 
+    </array>
+    <!-- 毎時15分 -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Minute</key>
+        <integer>15</integer>
+    </dict>
+    <key>StandardOutPath</key>
+    <string>/Users/rails/Work/TkmtLabGo/server/log/test.out</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/rails/Work/TkmtLabGo/server/log/test.err</string>
+    <key>KeepAlive</key>
+    <false/>
+    <key>UserName</key>
+    <string>rails</string>
+</dict>
+</plist>
+
