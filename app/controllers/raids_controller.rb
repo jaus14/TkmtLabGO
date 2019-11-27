@@ -50,6 +50,12 @@ class RaidsController < ApplicationController
         end
     end
 
+    def destroy
+        @raid = Raid.find(params[:id])
+        @raid.destroy
+        redirect_to raids_path
+    end
+
     private
         def raid_params
             params.require(:raid).permit(:pokemon_id, :place_id, :date, :comment)

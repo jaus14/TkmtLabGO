@@ -15,8 +15,10 @@
           <a href="../pokemons">図鑑</a>
         </li>
         <li id="menu2">
-          <img src="assets/houou.png"height="60px">
-          色違いマウント</li>
+            <a href="../raid/new">
+                <img src="assets/houou.png"height="60px">
+            </a>
+            <a href="../raid/new">色違いマウント</a></li>
         <li id="menu3">
           <img src="assets/settei.png" height="50px">
           なんか</li>
@@ -49,7 +51,8 @@
 		     <td><%= @pokemons[pokemon_id - 1]['name'] %></td>
 		     <td><%= @places[place_id - 1]['name'] %></td>
 		     <td><%= raid.date %></td>
-             <td><%= link_to("編集", "raids/#{raid.id}/edit") %></td>
+             <!-- <td><%= link_to("編集", "raids/#{raid.id}/edit") %></td> -->
+             <td><%= link_to "削除", "raids/#{raid.id}/destroy", method: :delete %></td>
 		    </tr>
             <% end %>
 		  </tbody>
