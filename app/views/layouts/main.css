@@ -35,9 +35,8 @@ li#menu0,#menu1,#menu2,#menu3{
 }
 .under{
   min-width:1250px;
-  width:expression(document.body.clientWidth < 1502? "1500px" : "auto"); 
-  min-height:850px;  
-  display:flexbox;
+  /*width:expression(document.body.clientWidth < 1502? "1500px" : "auto");*/
+  min-height:850px;
 }
 .center{
   float:left;
@@ -50,7 +49,6 @@ li#menu0,#menu1,#menu2,#menu3{
   background: -webkit-linear-gradient(left, #25c481, #25b7c4);
   background: linear-gradient(to right, #25c481, #25b7c4);
   font-family: 'Roboto', sans-serif;
-
 }
 
 h1{
@@ -100,12 +98,13 @@ td{
   float:right;
   font-family:'Yu Mincho';
   width:40%;
-  height:850px; 
+  min-height:850px; 
   
   border:outset;
   background-image: -webkit-linear-gradient(#DEDFE3 2%, #AEB3B9 95%), -webkit-radial-gradient(33% 100%, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-image: linear-gradient(#DEDFE3 2%, #AEB3B9 95%), radial-gradient(33% 100%, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-blend-mode: screen;
+  display:flexbox;
 }
 
 .btn-square-pop {
@@ -155,8 +154,9 @@ td{
 }
 .right ul li{
   display: inline-block;
-  font-size:25px;
+  font-size:22px;
   font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'
+  width: 50%;
 }
 
 #onlinediv{

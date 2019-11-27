@@ -10,22 +10,49 @@
     <script type="text/javascript" src="js/raid/raid.js"></script>
     <title>場所登録画面</title>
   </head>
-  <body>
-      <div class="bg-image"><div class="bg-mask">
-        <h1>
-            <img src="./picture/nixyutu.png" width=20% height=20% style="float:left;">
-            場所登録画面
-            <img src="./picture/nixyutu.png" width=20% height=20% style="float:right;">
-          </h1>
-        <table align="center">
-        <tr>
-         <td>場所：</td>
-         <td><input class=textran type=text name="pokemon" placeholder="(必須)" id="pokemon"></td>
-        </tr>
-        </table>  
-        <input type="button" onclick="seni2()" value="Register!" class="btn-square-shadow">
+  <body id="body2"><div id="cent">
 
-  </div></div>
-        
-  </body>
+    <div id="touroku">
+
+
+            <div class="bg-image"><div class="bg-mask">
+                    <h1>
+                        <img src="./picture/nixyutu.png" width=20% height=20% style="float:left;">
+                        場所登録画面
+                        <img src="./picture/nixyutu.png" width=20% height=20% style="float:right;">
+                    </h1>
+                    
+                    <table align="center" id="regiBasyo">
+                    <tr>
+                     <td>場所：</td>
+                     <td><input class=textran type=text name="time" placeholder="(例)ムルデル通り" id="time"></td>
+                    </tr>
+                    <tr>
+                    </table>  
+                    <input type="button" onclick="seni2()" value="Register!" class="btn-square-shadow">
+            
+              </div></div>
+
+
+    </div>
+    <div class="clear"></div>
+    <div id="hyou">
+        <table align="center" id="basyoIti">
+            <tr>
+                <th colspan="3">場所一覧</th>
+            </tr>
+            <tr>
+                <td>ムルデル通り</td>
+                <td>院ゼミ室</td>
+                <td>ローソンより</td>
+            </tr>
+            <tr>
+                <td>一号館</td>
+                <td>神社</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+  </div></body>
 </html>
