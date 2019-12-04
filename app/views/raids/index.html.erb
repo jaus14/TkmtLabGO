@@ -64,7 +64,8 @@
 
       <div class="rightdiv">
         <!-- ログインしている人 -->
-        <img class="icon" src="assets/pikatyu.png"><%= @login_user.name_id %> オンライン
+        <!-- <img class="icon" src="assets/pikatyu.png"><%= @login_user.name_id %> オンライン -->
+        <%= image_tag @login_user.image.thumb4.to_s, class: 'icon' %><%= @login_user.name_id %> オンライン
         <br><br>
         <!-- <a href="/logout" class="btn-square-pop">オフライン</a> -->
         <!-- <a href="#" class="btn-square-pop">オンライン</a> -->
