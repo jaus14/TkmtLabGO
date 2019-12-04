@@ -13,6 +13,8 @@ if [ "$(git rev-parse origin/master)" != "$(git rev-parse master)" ]; then
     echo "Pulling"
     git pull
     echo "Removing Docker Network"
+    docker network rm $(docker network ls -q) || true
+    echo "Docker Building.."
     /usr/local/bin/docker-compose -f /Users/rails/Work/TkmtLabGO/docker/docker-compose.yml build --no-cache
     echo "Service starting..."
     /usr/local/bin/docker-compose -f /Users/rails/Work/TkmtLabGO/docker/docker-compose.yml up -d
