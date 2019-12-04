@@ -10,8 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_31_090719) do
+ActiveRecord::Schema.define(version: 2019_11_27_090024) do
   parent of 9c75aa9... Revert "Usersテーブルにカラムを追加した"
+
 
   create_table "places", force: :cascade do |t|
     t.string "name"
@@ -37,13 +38,7 @@ ActiveRecord::Schema.define(version: 2019_10_31_090719) do
     t.integer "place_id"
   end
 
-  create_table "users", force: :cascade do |t|
-    t.string "name_id"
-    t.text "comment"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "password_digest"
-    t.integer "is_login"
-  end
+# Could not dump table "users" because of following StandardError
+#   Unknown type 'srting' for column 'image'
 
 end
