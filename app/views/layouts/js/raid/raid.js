@@ -18,3 +18,19 @@ function check(pokemon,time,locate,bikou){
     //入力情報が空白ではないか確認する処理
     return true;
 }
+
+function seni2(){
+
+    var place = document.getElementById('pokemon').value;
+
+    if(check2(place)){
+        window.location.href = "raid.html";
+    }else{
+        alert("入力情報が違います。");
+    }
+}
+
+function check2(place){
+    //入力情報が空白ではないか確認する処理
+    return true;
+}

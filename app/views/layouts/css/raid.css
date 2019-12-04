@@ -111,6 +111,7 @@ table {
     position: relative;
     padding: 1em 0;
   }
+
   h1::before,
   h1::after {
     position: absolute;
@@ -130,3 +131,70 @@ table {
     border-top: 1px solid #ccc;
     border-bottom: 2px solid #000000;
   }
+
+  #basyo {
+    font-size: 8px;
+  }
+
+  #cent{
+    text-align: center;
+    /*border: 1px solid #aaa;*/
+  }
+
+  #body2:after{
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;/*画面全体を覆う*/
+  content: "";
+  background: rgb(0, 101, 252);/*保険用*/
+  z-index: -1;
+  background: -moz-linear-gradient(top, #FFCC66, #FFF);
+  background: -webkit-linear-gradient(top, #FFCC66, #FFF);
+  background: radial-gradient(#FFF, #FFCC66);
+  }
+
+  #regiBasyo{
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  #hyou{
+    width: 50%;
+    min-width: 300px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #aaa;
+  }
+
+  .clear{
+    display: none;
+  }
+
+  #basyoIti{
+    width: 100%;
+    border-collapse: collapse;
+  }
+  #basyoIti th,#basyoIti td{
+    color:white;
+    border:solid 1px white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  #basyoIti th{
+    background: linear-gradient(#829ebc,#225588);
+  }
+  #basyoIti tr td:nth-child(1){
+    background: #49c5f0;
+  }
+  #basyoIti tr td:nth-child(2){
+    background: #57b3e8;
+  }
+  #basyoIti tr td:nth-child(3){
+    background: #649cdf;
+  }
+
+.myutu {
+  margin-top: -20px;
+  width: 21%;
+  height: 21%;
+}
