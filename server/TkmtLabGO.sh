@@ -2,6 +2,7 @@
 set -eu
 
 date "+%Y/%m/%d-%H:%M:%S"
+date "+%Y/%m/%d-%H:%M:%S" 1>&2
 cd /Users/rails/Work/TkmtLabGO
 echo "working directory is changed"
 
