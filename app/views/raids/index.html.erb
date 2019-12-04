@@ -89,7 +89,7 @@
             <% if !user.image.blank? %>
                 <li><%= image_tag user.image.thumb4.to_s, class: 'icon' %><%= user.name_id %></li><br>
             <% else %>
-                <li><img class="icon" src="assets/robots.jpg"><%= @login_user.name_id %></li>
+                <li><img class="icon" src="assets/robots.jpg"><%= user.name_id %></li>
             <% end %>
           <% end %>
           <% end %>
@@ -103,7 +103,7 @@
             <% if !user.image.blank? %>
                 <li><%= image_tag user.image.thumb4.to_s, class: 'icon' %><%= user.name_id %></li><br>
             <% else %>
-                <li><img class="icon" src="assets/robots.jpg"><%= @login_user.name_id %></li><br>
+                <li><img class="icon" src="assets/robots.jpg"><%= user.name_id %></li><br>
             <% end %>
           <% end %>
           <% end %>
