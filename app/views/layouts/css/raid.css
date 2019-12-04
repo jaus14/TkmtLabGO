@@ -111,6 +111,7 @@ table {
     position: relative;
     padding: 1em 0;
   }
+
   h1::before,
   h1::after {
     position: absolute;
@@ -137,7 +138,7 @@ table {
 
   #cent{
     text-align: center;
-    border: 1px solid #aaa;
+    /*border: 1px solid #aaa;*/
   }
 
   #body2:after{
@@ -192,3 +193,8 @@ table {
     background: #649cdf;
   }
 
+.myutu {
+  margin-top: -20px;
+  width: 21%;
+  height: 21%;
+}
