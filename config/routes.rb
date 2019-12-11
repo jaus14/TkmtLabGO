@@ -17,4 +17,6 @@ Rails.application.routes.draw do
   get "places" => "places#index"
   get "place/new" => "places#new"
   post "place/create" => "places#create"
+  get "raid/:id/show" => "raids#show"
+  post "raid/:id/attendance" => "raids#attendance"
 end

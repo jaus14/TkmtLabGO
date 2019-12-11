@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>レイド詳細</title>
+  </head>
+  <body>
+    <h1><%= @pokemon.name %></h1>
+    <table>
+      <tbody>
+        <tr>
+          <td><%= @raid.date %></td>
+          <td><%= @place.name %></td>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <tbody>
+        <% @attendances.each do |attendance| %>
+          <tr>
+            <td><img class="icon" src="../../assets/pikatyu.png"></td>
+            <td><%= @users.find(attendance[:user_id]).name_id %></td>
+            <% case attendance[:status_id] when 2 %>
+                <td>○</td>
+              <% when 3 %>
+                <td>×</td>
+              <% when 4 %>
+                <td>△</td>
+            <% end %>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+    <%= form_tag("attendance") do %>
+      <%= submit_tag("○", name: "attend") %>
+      <%= submit_tag("△", name: "thinking") %>
+      <%= submit_tag("×", name: "no") %>
+    <% end %>
+  </body>
+</html>
