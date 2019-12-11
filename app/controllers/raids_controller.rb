@@ -72,7 +72,8 @@ class RaidsController < ApplicationController
       if @attendance.save
           redirect_to '/raid/'+params[:id]+'/show'
       end
-      
+    end
+
     def destroy
         @raid = Raid.find(params[:id])
         @raid.destroy
