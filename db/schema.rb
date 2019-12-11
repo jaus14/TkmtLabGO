@@ -11,8 +11,16 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 2019_11_27_090024) do
-  parent of 9c75aa9... Revert "Usersテーブルにカラムを追加した"
 
+  create_table "attendances", force: :cascade do |t|
+    t.integer "raid_id"
+    t.integer "user_id"
+    t.integer "status_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+  
+  parent of 9c75aa9... Revert "Usersテーブルにカラムを追加した"
 
   create_table "places", force: :cascade do |t|
     t.string "name"
