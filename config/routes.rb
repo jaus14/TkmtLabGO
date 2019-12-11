@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   post "raid/create" => "raids#create"
   get "raids/:id/edit" => "raids#edit"
   post "raids/:id/update" => "raids#update"
+  delete "raids/:id/destroy" => "raids#destroy"
   get "pokemons" => "pokemons#index"
   get "pokemon/new" => "pokemons#new"
   post "pokemon/create" => "pokemons#create"

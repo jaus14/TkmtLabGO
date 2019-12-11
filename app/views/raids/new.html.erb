@@ -6,9 +6,11 @@
     <%= form_tag("create") do %>
         <p>
           ポケモン<br>
-          <%= collection_select(@pokemon, :pokemon_id, @pokemons, :id, :name) %><br>
+          <%= collection_select(@pokemon, :pokemon_id, @pokemons, :id, :name) %>
+          <a href="../../pokemon/new">ポケモン追加</a><br>
           場所<br>
-          <%= collection_select(@place, :place_id, @places, :id, :name) %><br>
+          <%= collection_select(@place, :place_id, @places, :id, :name) %>
+          <a href="../../place/new">場所追加</a><br>
           時間<br>
           <input type="datetime-local" name="date"><%= @raid.date %></input><br>
           一言<br>

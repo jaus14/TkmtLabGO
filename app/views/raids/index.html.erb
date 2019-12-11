@@ -15,8 +15,10 @@
           <a href="../pokemons">図鑑</a>
         </li>
         <li id="menu2">
-          <img src="assets/houou.png"height="60px">
-          色違いマウント</li>
+            <a href="../raid/new">
+                <img src="assets/houou.png"height="60px">
+            </a>
+            <a href="../raid/new">色違いマウント</a></li>
         <li id="menu3">
           <img src="assets/settei.png" height="50px">
           なんか</li>
@@ -52,6 +54,7 @@
 		     <td><%= raid.date %></td>
              <td><%= link_to("編集", "raids/#{raid.id}/edit") %></td>
              <td><%= link_to("詳細", "raid/#{raid.id}/show") %></td>
+             <td><%= link_to "削除", "raids/#{raid.id}/destroy", method: :delete %></td>
 		    </tr>
             <% end %>
 		  </tbody>
@@ -62,14 +65,21 @@
            <div class="right">
 
       <div class="rightdiv">
+        <div style="display:inline-flex">
         <!-- ログインしている人 -->
-        <img class="icon" src="assets/pikatyu.png"><%= @login_user.name_id %> オンライン
-        <br><br>
+        <!-- <img class="icon" src="assets/pikatyu.png"><%= @login_user.name_id %> オンライン -->
+        <% if !@login_user.image.blank? %>
+            <%= image_tag @login_user.image.thumb4.to_s, class: 'icon' %><%= @login_user.name_id %>
+        <% else %>
+            <img class="icon" src="assets/robots.jpg"><%= @login_user.name_id %>
+        <% end %>
+        オンライン <pre>  </pre>
         <!-- <a href="/logout" class="btn-square-pop">オフライン</a> -->
         <!-- <a href="#" class="btn-square-pop">オンライン</a> -->
         <%= form_for(:session, url: logout_path) do |f| %>
             <%= f.submit "ログアウト", :class=>"btn-square-pop" %>
         <% end %>
+        </div>
       </div>
 
       <div class="rightdiv">
@@ -78,7 +88,11 @@
           <!-- 1ユーザーに対して<li>タグで画像とID名を表示する -->
           <% @users.each do |user| %>
           <% if user.is_login == 1 && user.id != @login_user.id %>
-            <li> <img class="icon" src="assets/utsumi.jpg"><%= user.name_id %></li><br>
+            <% if !user.image.blank? %>
+                <li><%= image_tag user.image.thumb4.to_s, class: 'icon' %><%= user.name_id %></li><br>
+            <% else %>
+                <li><img class="icon" src="assets/robots.jpg"><%= user.name_id %></li>
+            <% end %>
           <% end %>
           <% end %>
         </ul>
@@ -88,7 +102,11 @@
         <ul id="ofline"><!-- オフラインの人一覧 -->
             <% @users.each do |user| %>
             <% if user.is_login == 0 %>
-          <li> <img class="icon" src="assets/hirata.jpg"><%= user.name_id %></li><br>
+            <% if !user.image.blank? %>
+                <li><%= image_tag user.image.thumb4.to_s, class: 'icon' %><%= user.name_id %></li><br>
+            <% else %>
+                <li><img class="icon" src="assets/robots.jpg"><%= user.name_id %></li><br>
+            <% end %>
           <% end %>
           <% end %>
         </ul>

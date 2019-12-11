@@ -8,7 +8,7 @@
         <%= form_for(@user, url: user_create_path, method: :post) do |f| %>
         <%= render 'layouts/error_messages', model: f.object %>
         <p>
-            <%= f.label :name_id, "ID(4文字以上)" %><br>
+            <%= f.label :name_id, "ID(4文字以上16文字以下)" %><br>
             <%= f.text_field :name_id %>
         </p>
         <p>
@@ -18,6 +18,10 @@
         <p>
             <%= f.label :comment, "ひとこと" %><br>
             <%= f.text_field :comment %>
+        </p>
+        <p>
+            <%= f.label :image, "image" %><br>
+            <%= f.file_field :image %>
         </p>
         <%= f.submit "登録する"%>
         <% end %>
