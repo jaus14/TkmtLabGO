@@ -7,4 +7,5 @@ services:
     ports:
       - "3000:3000"
     volumes:
+      - ../public/uploads:/var/www/public/uploads
       - ../db:/var/www/db
