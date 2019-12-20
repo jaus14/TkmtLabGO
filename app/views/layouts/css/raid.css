@@ -1,0 +1,200 @@
+body {
+    /*background-image: url("../picture/pokego.jpg");
+    background: -moz-linear-gradient(top, rgb(0, 101, 252), #FFF);
+    background: -webkit-linear-gradient(top, rgb(0, 101, 252), #FFF);
+    background: linear-gradient(to bottom, rgb(0, 101, 252), #FFF);
+    background: radial-gradient(rgb(169, 214, 255), rgb(0, 80, 159));*/
+    height:100%;
+    font-family: Meiryo;
+}
+
+body:after {/*擬似要素をつくる*/
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;/*画面全体を覆う*/
+  content: "";
+  background: rgb(0, 101, 252);/*保険用*/
+  z-index: -1;
+  background: -moz-linear-gradient(top, rgb(0, 101, 252), #FFF);
+  background: -webkit-linear-gradient(top, rgb(0, 101, 252), #FFF);
+  background: radial-gradient(rgb(169, 214, 255), rgb(0, 80, 159));;
+}
+
+#oowaku {
+    background: #ffffff;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    margin: 30px auto;
+}
+
+.bg-image {
+  background-image: url("../picture/raidmezirusi.png");
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  border: 1px solid #cccccc;
+  background-size: cover;
+  margin: 30px auto;
+}
+.bg-mask {
+  height: 90%;
+  background: rgba(255,255,255,0.5);
+}
+
+.gobotan{
+  height: 60px;
+  width: 150px;
+  text-align: center;
+  background: rgb(0, 0, 255);
+  color:white;
+}
+
+.gobotan:hover{
+  height: 60px;
+  width: 150px;
+  text-align: center;
+  background: rgb(100, 100, 255);
+}
+
+.textran:focus {
+  border: 2px solid #dd4444;
+}
+
+.textarearan{   
+    padding: .3em .10em;
+    height: 50px;
+    background: #fff;
+    border: 3px double #1192d3;
+    resize:none;
+}
+
+.textarearan:focus{
+    border: 2px solid #dd4444;
+}
+
+table {
+  text-align: center;
+  vertical-align: top;
+  font: Yu Gothic;
+  }
+  
+  .btn-square-shadow {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+  }
+  .btn-square-shadow:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+    border-bottom: none;
+  }
+  .btn-square-shadow:hover {
+    background: #000000;
+  }
+
+  .textran {
+    padding: .3em .10em;
+    height: 20px;
+    background: #fff;
+    border: 3px double #14dd9a;
+  }
+
+  h1 {
+    position: relative;
+    padding: 1em 0;
+  }
+
+  h1::before,
+  h1::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 6px;
+    box-sizing: border-box;
+  }
+  h1::before {
+    top: 0;
+    border-top: 2px solid #000000;
+    border-bottom: 1px solid #ccc;
+  }
+  h1::after {
+    bottom: 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 2px solid #000000;
+  }
+
+  #basyo {
+    font-size: 8px;
+  }
+
+  #cent{
+    text-align: center;
+    /*border: 1px solid #aaa;*/
+  }
+
+  #body2:after{
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;/*画面全体を覆う*/
+  content: "";
+  background: rgb(0, 101, 252);/*保険用*/
+  z-index: -1;
+  background: -moz-linear-gradient(top, #FFCC66, #FFF);
+  background: -webkit-linear-gradient(top, #FFCC66, #FFF);
+  background: radial-gradient(#FFF, #FFCC66);
+  }
+
+  #regiBasyo{
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  #hyou{
+    width: 50%;
+    min-width: 300px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #aaa;
+  }
+
+  .clear{
+    display: none;
+  }
+
+  #basyoIti{
+    width: 100%;
+    border-collapse: collapse;
+  }
+  #basyoIti th,#basyoIti td{
+    color:white;
+    border:solid 1px white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  #basyoIti th{
+    background: linear-gradient(#829ebc,#225588);
+  }
+  #basyoIti tr td:nth-child(1){
+    background: #49c5f0;
+  }
+  #basyoIti tr td:nth-child(2){
+    background: #57b3e8;
+  }
+  #basyoIti tr td:nth-child(3){
+    background: #649cdf;
+  }
+
+.myutu {
+  margin-top: -20px;
+  width: 21%;
+  height: 21%;
+}
