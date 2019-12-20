@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang=“ja”>
+  <head>
+    <meta charset=“UTF-8”>
+    <!-- cssファイルの指定 -->
+    <link rel="stylesheet" type="text/css" href="css/raid.css" />
+    <!-- jqueryの読み込み これを入れるとよく使うjsが書きやすくなる -->
+    <script type="text/javascript" src="js/jquery/jquery-3.4.1.min.js"></script>
+    <!-- 自分で書いたjsファイル -->
+    <script type="text/javascript" src="js/raid/raid.js"></script>
+    <title>場所登録画面</title>
+  </head>
+  <body id="body2"><div id="cent">
+
+    <div id="touroku">
+
+
+            <div class="bg-image"><div class="bg-mask">
+                    <h1>
+                        <img src="./picture/150_myutu.png" style="float:left;" class="myutu">
+                        場所登録画面
+                        <img src="./picture/150_myutu.png" style="float:right;" class="myutu">
+                    </h1>
+                    
+                    <table align="center" id="regiBasyo">
+                    <tr>
+                     <td>場所：</td>
+                     <td><input class=textran type=text name="time" placeholder="(例)ムルデル通り" id="time"></td>
+                    </tr>
+                    <tr>
+                    </table>  
+                    <input type="button" onclick="seni2()" value="Register!" class="btn-square-shadow">
+            
+              </div></div>
+
+
+    </div>
+    
+    <div class="clear"></div>
+    <div id="hyou">
+        <table align="center" id="basyoIti">
+            <tr>
+                <th colspan="3">場所一覧</th>
+            </tr>
+            <tr>
+                <td>ムルデル通り</td>
+                <td>院ゼミ室</td>
+                <td>ローソンより</td>
+            </tr>
+            <tr>
+                <td>一号館</td>
+                <td>神社</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+  </div></body>
+</html>
