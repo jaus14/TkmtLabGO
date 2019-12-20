@@ -35,15 +35,10 @@ li#menu0,#menu1,#menu2,#menu3{
 }
 .under{
   min-width:1250px;
-<<<<<<< HEAD
-  width:expression(document.body.clientWidth < 1502? "1500px" : "auto"); 
+  /*width:expression(document.body.clientWidth < 1502? "1500px" : "auto"); */
   min-height:850px;
   margin-height:80px;
   display:flexbox;
-=======
-  /*width:expression(document.body.clientWidth < 1502? "1500px" : "auto");*/
-  min-height:850px;
->>>>>>> 4d5c0c4c83d22d923b6a31fac62035baeefbec9d
 }
 .center{
   float:left;
@@ -105,13 +100,8 @@ td{
   float:right;
   font-family:'Yu Mincho';
   width:40%;
-<<<<<<< HEAD
- min-height:850px; 
+ min-height:850px;
   display:flexbox;
-=======
-  min-height:850px; 
->>>>>>> 4d5c0c4c83d22d923b6a31fac62035baeefbec9d
-  
 
   border:outset;
   background-image: -webkit-linear-gradient(#DEDFE3 2%, #AEB3B9 95%), -webkit-radial-gradient(33% 100%, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
@@ -168,7 +158,7 @@ td{
 .right ul li{
   display: inline-block;
   font-size:22px;
-  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'
+  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
   width: 50%;
 }
 
